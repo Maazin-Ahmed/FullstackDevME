@@ -1,0 +1,167 @@
+.section {
+  padding: 50px 0 100px 0; /* Less top padding since it follows Experience */
+  position: relative;
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.eyebrow {
+  font-family: 'Outfit', 'Inter', monospace;
+  color: var(--primary);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.subSection {
+  margin-bottom: 5rem;
+}
+
+.subSection:last-child {
+  margin-bottom: 0;
+}
+
+.subHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.icon {
+  color: var(--secondary);
+}
+
+.iconLime {
+  color: #a3e635; /* Lime */
+}
+
+.subHeader h3 {
+  font-size: 1.8rem;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.webCard {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.webCard:hover {
+  transform: translateY(-5px);
+}
+
+.tagMono {
+  font-family: monospace;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 1rem;
+}
+
+.webCard h4 {
+  font-size: 1.25rem;
+  color: var(--text-main);
+  margin: 0 0 0.75rem 0;
+}
+
+.webCard p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+.cyanLink {
+  color: var(--primary); /* using var(--primary) which is cyan/teal */
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: opacity 0.2s ease;
+  align-self: flex-start;
+}
+
+.cyanLink:hover {
+  opacity: 0.8;
+}
+
+/* Timeline / List */
+.timelineList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timelineCard {
+  padding: 2rem;
+  border-left: 4px solid #a3e635; /* Lime border */
+  border-radius: 0 16px 16px 0; /* Keep right side rounded, left straight for the border */
+  transition: transform 0.3s ease;
+}
+
+.timelineCard:hover {
+  transform: translateX(5px);
+}
+
+.cardHeader {
+  margin-bottom: 1rem;
+}
+
+.cardHeader h4 {
+  font-size: 1.3rem;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.timelineCard p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tags span {
+  font-size: 0.8rem;
+  color: #a3e635; /* Lime text for tags to match theme */
+  background: rgba(163, 230, 53, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
