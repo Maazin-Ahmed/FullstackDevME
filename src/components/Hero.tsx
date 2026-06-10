@@ -56,7 +56,7 @@ export default function Hero() {
             <a href="#projects" className={styles.primaryBtn}>
               View Projects <ArrowRight size={18} />
             </a>
-            <a href="/resume.pdf" className={styles.secondaryBtn} target="_blank">
+            <a href="/resume/Maazin_Ahmed_FullStackDev_Resume.pdf" className={styles.secondaryBtn} target="_blank">
               <Download size={18} /> Download Resume
             </a>
             <a href="https://github.com/Maazin-Ahmed" className={styles.iconBtn} target="_blank" aria-label="GitHub">
