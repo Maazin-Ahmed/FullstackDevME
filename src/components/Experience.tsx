@@ -47,7 +47,7 @@ export default function Experience() {
               <div className={`${styles.certCard} glass-panel`}>
                 <div className={styles.certIcon}>Oracle</div>
                 <div className={styles.certContent}>
-                  <h4>Oracle Cloud Infrastructure 2025</h4>
+                  <h4>Oracle Cloud Infrastructure 2025 </h4>
                   <p>Certified Architect Associate</p>
                 </div>
               </div>
